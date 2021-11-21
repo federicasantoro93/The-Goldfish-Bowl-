@@ -1,6 +1,4 @@
-body{
-    align-items: center;
-}
+
 
 
 h1{
@@ -16,6 +14,7 @@ h1{
     width: 350px;
     background-image: url('img/bowl.png');
     opacity: 70%;
+    margin: 0 auto;
     
 
    
@@ -23,10 +22,12 @@ h1{
 
 .goldfish{
     position:absolute;
-    width: 70px;
-    height: 50px;
+
     background-image:url('img/right.png');
     background-position: 35% 30%;
+    width: 70px;
+    height: 50px;
+
     top:200px;
     left: 150px;
     transition: top 4s ease, left 4s ease;
@@ -38,19 +39,24 @@ h1{
     */
 }
 
-.goldfish.swim {
+.goldfish.swim__right {
     background-position: 60% 30%;
 }
 
 
-@keyframes swimming {
-    from {
-        background-position: 35% 30%;
-    }
-    to {
-        background-position: 60% 30%;
-    }
+.goldfish.up{
+    width: 50px;
+    height: 70px;
+    background-image:url('img/up.png');
+    background-position: 50% 65%;
+
 }
+
+.goldfish.swim__up {
+    background-position: 50% 40%;
+}
+
+
 
 button{
     font-size: 25px;
@@ -80,30 +86,30 @@ button{
     border: 3px solid #545454;
     
 }
-.up{
+button.up{
     top:0px;
     left: 130px;
     padding: 5px 15px;
 }
-.down{
+button.down{
     top:100px;
     left: 130px;
     padding: 5px 15px;
 }
-.left{
+button.left{
     top:50px;
     left: 75px;
     padding: 5px 12px;
 
 }
-.right{
+button.right{
     top:50px;
     left: 185px;
     padding: 5px 12px;
 
 }
 
-.center{
+button.center{
     top:50px;
     left: 130px;
     padding: 20px 22px;
