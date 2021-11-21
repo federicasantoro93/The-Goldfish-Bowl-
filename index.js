@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     goldfish.classList.add("up");
                                   
                     goldfish.style.top = '100px';
-                    const death = setTimeout(() => {goldfish.style.transform = 'rotate(-90deg)'},3000);
+                    const death = setTimeout(() => {goldfish.style.transform = 'rotate(90deg)'},3000);
                     break;
                 case 'left':
                     goldfish.style.left = '40px';
