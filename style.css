@@ -1,34 +1,94 @@
-h1{
-    color: #545454;
+body{
+    align-items: center;
 }
 
+
+h1{
+    color: #545454;
+    text-align: center;
+}
+
+
+
 .bowl{
-    border: 1 ps solid black;
     position: relative;
     height: 350px;
-    width: 100%;
+    width: 350px;
+    background-image: url('img/bowl.png');
+    opacity: 70%;
+    
 
-    background-color: yellow;
+   
 }
 
 .goldfish{
     position:absolute;
-    width: 100px;
-    height: 200px;
-    background-color: gray;
-    top:75px;
-    left:125px;
+    width: 70px;
+    height: 50px;
+    background-image:url('img/right.png');
+    background-position: 35% 30%;
+    top:200px;
+    left: 150px;
 
     transition: all 2s ease;
+
 }
 
 button{
-    font-size: 16px;
+    font-size: 25px;
 
     color:#545454;
-    background-color: #f37b23;
+    
 
-    border: 2px solid #545454;
+    border: 2px solid #e7e8e9;
     border-radius: 5px;
 
+}
+
+.buttons__wrapper{
+    position:relative;
+   
+    width: 300px;
+    height: 150px;
+
+    
+    margin: 0 auto;
+    
+
+}
+
+button{
+    position:absolute;
+    border: 3px solid #545454;
+    
+}
+.up{
+    top:0px;
+    left: 130px;
+    padding: 5px 15px;
+}
+.down{
+    top:100px;
+    left: 130px;
+    padding: 5px 15px;
+}
+.left{
+    top:50px;
+    left: 75px;
+    padding: 5px 12px;
+
+}
+.right{
+    top:50px;
+    left: 185px;
+    padding: 5px 12px;
+
+}
+
+.center{
+    top:50px;
+    left: 130px;
+    padding: 20px 22px;
+
+    background-color:#545454;
 }
