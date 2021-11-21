@@ -1,0 +1,34 @@
+h1{
+    color: #545454;
+}
+
+.bowl{
+    border: 1 ps solid black;
+    position: relative;
+    height: 350px;
+    width: 100%;
+
+    background-color: yellow;
+}
+
+.goldfish{
+    position:absolute;
+    width: 100px;
+    height: 200px;
+    background-color: gray;
+    top:75px;
+    left:125px;
+
+    transition: all 2s ease;
+}
+
+button{
+    font-size: 16px;
+
+    color:#545454;
+    background-color: #f37b23;
+
+    border: 2px solid #545454;
+    border-radius: 5px;
+
+}
