@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     const btns = [...document.querySelectorAll('button')];
     const goldfish = document.querySelector('.goldfish');
 
+
+
     btns.forEach((button) => {
         button.addEventListener('click', (event) => {
             
@@ -10,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             switch(direction){
                 case 'up':
                     goldfish.style.top = '100px';
-                    setTimeout(() => {goldfish.style.transform = 'rotate(180deg)'},1500);
+                    const death = setTimeout(() => {goldfish.style.transform = 'rotate(180deg)'},3000);
                     break;
                 case 'left':
                     goldfish.style.left = '40px';
@@ -19,6 +21,13 @@ document.addEventListener('DOMContentLoaded', () =>{
                     goldfish.style.top = '250px';
                     break;
                 case 'right':
+                    const interval = setInterval(() => {
+                        goldfish.classList.toggle("swim");
+                    }, 400);
+                    
+                    setTimeout(() => {
+                        clearInterval(interval);
+                    }, 2500);
                     goldfish.style.left = '250px'; 
                     break;   
             }
