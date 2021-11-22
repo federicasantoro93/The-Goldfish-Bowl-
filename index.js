@@ -23,22 +23,46 @@ document.addEventListener('DOMContentLoaded', () =>{
                     goldfish.classList.add("up");
                                   
                     goldfish.style.top = '100px';
-                    const death = setTimeout(() => {goldfish.style.transform = 'rotate(90deg)'},3000);
+                    /*const death = setTimeout(() => {goldfish.style.transform = 'rotate(90deg)'},3000);*/
                     break;
                 case 'left':
+                    const interval2 = setInterval(() => {
+                        goldfish.classList.toggle("swim__left");
+                    }, 400);
+                    
+                    setTimeout(() => {
+                        clearInterval(interval2);
+                    }, 2500);
+
+                    goldfish.classList.add("left");
+
                     goldfish.style.left = '40px';
+                    
                     break;
                 case 'down':
+                    const interval3 = setInterval(() => {
+                        goldfish.classList.toggle("swim__down");
+                    }, 400);
+                    
+                    setTimeout(() => {
+                        clearInterval(interval3);
+                    }, 2500);
+
+                    goldfish.classList.add("down");
+
                     goldfish.style.top = '250px';
                     break;
                 case 'right':
-                    const interval = setInterval(() => {
+                    const interval4 = setInterval(() => {
                         goldfish.classList.toggle("swim__right");
                     }, 400);
                     
                     setTimeout(() => {
-                        clearInterval(interval);
+                        clearInterval(interval4);
                     }, 2500);
+
+                    goldfish.classList.add("right");
+
                     goldfish.style.left = '250px'; 
                     break;   
             }

@@ -27,18 +27,21 @@ h1{
     background-position: 35% 30%;
     width: 70px;
     height: 50px;
-
+  
     top:200px;
     left: 150px;
     transition: top 4s ease, left 4s ease;
     
-    /*animation-name: swimming;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    */
+  
 }
 
+.goldfish.right {
+    background-image:url('img/right.png');
+    background-position: 35% 30%;
+    width: 70px;
+    height: 50px;
+
+}
 .goldfish.swim__right {
     background-position: 60% 30%;
 }
@@ -54,6 +57,28 @@ h1{
 
 .goldfish.swim__up {
     background-position: 50% 40%;
+}
+
+.goldfish.left{
+    width: 70px;
+    height: 50px;
+    background-image:url('img/left.png');
+    background-position: 55% 25%;
+}
+
+.goldfish.swim__left {
+    background-position: 30% 25%;
+}
+
+.goldfish.down{
+    width: 50px;
+    height: 70px;
+    background-image:url('img/down.png');
+    background-position: 27% 50%;
+}
+
+.goldfish.swim__down {
+    background-position: 27% 75%;
 }
 
 
