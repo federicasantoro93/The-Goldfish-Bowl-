@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     
                     setTimeout(() => {
                         clearInterval(interval1);
+                        goldfish.classList.remove("up");
                     }, 2500);
 
                     goldfish.classList.add("up");
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     
                     setTimeout(() => {
                         clearInterval(interval2);
+                        goldfish.classList.remove("left");
                     }, 2500);
 
                     goldfish.classList.add("left");
@@ -46,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () =>{
                     
                     setTimeout(() => {
                         clearInterval(interval3);
+                        goldfish.classList.remove("down");
+
                     }, 2500);
 
                     goldfish.classList.add("down");
@@ -59,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     
                     setTimeout(() => {
                         clearInterval(interval4);
+                        goldfish.classList.remove("right");
                     }, 2500);
 
                     goldfish.classList.add("right");
