@@ -18,13 +18,22 @@ document.addEventListener('DOMContentLoaded', () =>{
                     
                     setTimeout(() => {
                         clearInterval(interval1);
-                        goldfish.classList.remove("up");
+                        //goldfish.classList.remove("up");
                     }, 2500);
+                    
+                    setTimeout(() => {
+                        goldfish.style.transform = 'rotate(0deg)';
+                        goldfish.classList.remove("up");
+
+                    }, 6000);
+                    
+
+
 
                     goldfish.classList.add("up");
                                   
                     goldfish.style.top = '100px';
-                    /*const death = setTimeout(() => {goldfish.style.transform = 'rotate(90deg)'},3000);*/
+                    const death = setTimeout(() => {goldfish.style.transform = 'rotate(90deg)'},3000);
                     break;
                 case 'left':
                     const interval2 = setInterval(() => {
@@ -35,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () =>{
                         clearInterval(interval2);
                         goldfish.classList.remove("left");
                     }, 2500);
+
+                    
+
+                    
 
                     goldfish.classList.add("left");
 
